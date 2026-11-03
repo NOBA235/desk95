@@ -1,0 +1,12 @@
+{
+  "name": "Desk 95 (Node + headless Blender)",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "22" }
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y --no-install-recommends blender && npm install",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": { "label": "Desk95 dev server", "protocol": "https" }
+  }
+}

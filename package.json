@@ -1,0 +1,22 @@
+{
+  "name": "desk95",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "check:layout": "node tools/check-layout.mjs",
+    "check:models": "python3 blender/check_glb.py"
+  },
+  "dependencies": {
+    "@iwsdk/core": "1.0.1"
+  },
+  "devDependencies": {
+    "@iwsdk/vite-plugin-dev": "1.0.1",
+    "typescript": "~5.6.3",
+    "vite": "^7.0.0"
+  }
+}
